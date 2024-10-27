@@ -1,0 +1,14 @@
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.productImg{
+    width: 100px;
+    border-radius: 10px;
+}
+.btn{
+    color: whitesmoke;
+}

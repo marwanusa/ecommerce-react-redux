@@ -1,0 +1,11 @@
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.categoryImg{
+    width: 120px;
+    border-radius: 50%;
+}
