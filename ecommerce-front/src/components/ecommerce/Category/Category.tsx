@@ -1,10 +1,18 @@
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 const {categoryImg, categoryContainer} = styles;
-const Category = () => {
+interface IProps {
+    img: string;
+    title: string;
+    prefix:string;   
+}
+const Category = ({title,img,prefix}:IProps) => {
     return (
         <div className={categoryContainer}>
-            <img className={categoryImg} src="https://cdn-eu.dynamicyield.com/api/9876644/images/244c68ad42d8b__hp-w12-22032022-h_m-women_shirts-blouses.jpg" alt="img" />
-            <p>title</p>
+            <Link to ={`/categories/products/${prefix}`} >
+            <img className={categoryImg} src={img} alt={title} />
+            <p>{title}</p>
+            </Link>
         </div>
 
     )

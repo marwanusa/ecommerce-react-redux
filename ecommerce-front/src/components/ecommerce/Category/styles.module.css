@@ -9,3 +9,10 @@
     width: 120px;
     border-radius: 50%;
 }
+
+.categoryContainer p {
+    color: black;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
