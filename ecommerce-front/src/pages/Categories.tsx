@@ -1,28 +1,25 @@
 import { Category } from '../components/ecommerce';
-import {Container,Row,Col} from 'react-bootstrap';
-import { useAppDispatch , useAppSelector } from '../store/hooks';
-import {actGetCategories} from "../store/categories/categoriesSlice"
+import { Container } from 'react-bootstrap';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { actGetCategories } from "../store/categories/categoriesSlice"
 import { useEffect } from 'react';
+import { Loading } from '../components/feedback';
+import { GridList } from '../components/common';
+
 const Categories = () => {
-    const dispatch = useAppDispatch();
-    const {loading,records,error} = useAppSelector((state)=>state.categories)
-    useEffect(()=>{
-      if(!records.length)
-      {
-        dispatch(actGetCategories())
-      }
-    },[dispatch,records])
-    const categoriesList = records.length > 0 ? records.map((category)=>
-        <Col xs={6} md={3} className="d-flex justify-content-center mb-5 mt-2">
-        <Category key={category.id} {...category}/>
-        </Col>
-    ) : "There are no categories" ;
+  const dispatch = useAppDispatch();
+  const { loading, records, error } = useAppSelector((state) => state.categories)
+  useEffect(() => {
+    if (!records.length) {
+      dispatch(actGetCategories())
+    }
+  }, [dispatch, records])
   return (
-<Container>
-            <Row>
-            {categoriesList}
-            </Row>
-        </Container>
+    <Container>
+      <Loading status={loading} error={error}>
+        <GridList records={records} renderItem={(record)=> <Category {...record}  />}empty={"There Are No Categories"} />
+      </Loading>
+    </Container>
   )
 }
 

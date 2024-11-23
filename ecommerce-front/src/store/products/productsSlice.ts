@@ -1,14 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit"
 import actGetProducts from "./act/actGetProducts";
+import { TProduct } from "../../types/product";
+import { TLoading } from "../../types/shared";
 interface IProductsState {
-    records: {
-        id: number;
-        title: string;
-        price: number;
-        cat_prefix: string;
-        img: string;
-      }[];
-    loading: "idle" | "pending" | "succeeded" | "failed";
+    records: TProduct[];
+    loading: TLoading;
     error: null | string;
   }
 const initialState: IProductsState = {
