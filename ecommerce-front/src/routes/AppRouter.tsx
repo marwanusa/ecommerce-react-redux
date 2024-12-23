@@ -1,6 +1,7 @@
 import { MainLayout } from "../layouts";
 import AboutUs from "../pages/AboutUs";
 import Cart from "../pages/Cart";
+import Wishlist from "../pages/Wishlist";
 import Categories from "../pages/Categories";
 import Error from "../pages/Error";
 import Home from "../pages/Home";
@@ -23,6 +24,10 @@ const router = createBrowserRouter(
         {
           path:"cart",
           element:<Cart/>
+        },
+        {
+          path:"wishlist",
+          element:<Wishlist/>
         }
         ,
         {

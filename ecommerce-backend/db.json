@@ -34,18 +34,18 @@
   "products": [
     {
       "id": 1,
-      "title": "Jersey top",
+      "title": "Loose Fit Printed hoodie",
       "price": 249,
       "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:74c70cba-6381-45d7-8a25-8dd26089ce2c/as/EID-d76db18a41d57881e51082b9619944b724eef382.jpg?preferwebp=true&height=630",
       "max": 4
     },
     {
       "id": 2,
-      "title": "Regular Fit Jersey top",
+      "title": "Regular Fit top",
       "price": 229,
       "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:e3d09365-8729-47f9-a1a6-3fc632093402/as/EID-84341816ca229e6e0771e3ce4f5344b6697b63d1.jpg?preferwebp=true&height=630",
       "max": 4
     },
     {
@@ -53,7 +53,7 @@
       "title": "Cotton polo shirt",
       "price": 200,
       "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/13994073/eeb1d90c4764366000eb8b8571396e81f0de5c44/2/image-thumb__3142108__product_listing/4d6db9e8f936d3d82b13bc5861b0310fa214c74d.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:7bc5eaf8-200c-4a22-8387-6586eea606fb/as/EID-a029559ddbe5fcef304f6f58f249b4f01e5333dc.jpg?preferwebp=true&height=630",
       "max": 3
     },
     {
@@ -61,7 +61,7 @@
       "title": "Cotton t-shirt",
       "price": 100,
       "cat_prefix": "women",
-      "img": "https://eg.hm.com/assets/styles/HNM/13650519/6cc34f51caee1d6cfe776b933d667075fa30d90d/2/image-thumb__2888777__product_listing/16c27492b022ac2eef03853f85d5b279a29ebeed.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:91b7e5a2-6408-4846-805f-40efb788308a/as/EID-daece6788136df03826e733fadaf782835c8f2ec.jpg?preferwebp=true&height=630",
       "max": 2
     },
     {
@@ -69,15 +69,15 @@
       "title": "Sweatshirt shorts",
       "price": 300,
       "cat_prefix": "women",
-      "img": "https://eg.hm.com/assets/styles/HNM/12652575/3e316aab8ce1b596545d144d0efd362975b3856f/2/image-thumb__1998684__product_listing/48756e509aa05341e4a618ba4c1b0a5ce24ebcae.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f3449143-6bf5-4754-a586-9ac676ed4b24/as/EID-f795663512f66483ca91769ea0b6aebd69076412.jpg?preferwebp=true&height=630",
       "max": 3
     },
     {
       "id": 6,
-      "title": "Velour top",
+      "title": "Oversized print-motif T-shirt",
       "price": 300,
       "cat_prefix": "kids",
-      "img": "https://eg.hm.com/assets/styles/HNM/14478215/543d925539f4a3b92a79df2dfe46d5d481e1c7ae/2/image-thumb__3463278__product_listing/c1417d02c7a93e6d2aca7965003b4f7d490f0ae8.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:571e45fe-1827-442e-aeb1-c59f5ed058e6/as/EID-60593a2bcc641b46dec4c5dae02730f148be4aef.jpg?preferwebp=true&height=630",
       "max": 2
     },
     {
@@ -85,7 +85,7 @@
       "title": "Pile all-in-one suit with ears",
       "price": 500,
       "cat_prefix": "baby",
-      "img": "https://eg.hm.com/assets/styles/HNM/10803913/c334b471ad8f564ed1b5dd410c95d94544ee0904/2/image-thumb__1594613__product_listing/5941e37dccc9b0172ac2ab7c266c1cd794cb547f.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:e2f7758f-0e65-4b24-a39e-2032ad750832/as/EID-0a5d43fb94ff1c4bfe58a390ed545b5beab65717.jpg?preferwebp=true&height=630",
       "max": 2
     },
     {
@@ -93,8 +93,9 @@
       "title": "Regular Fit football shirt",
       "price": 449,
       "cat_prefix": "sport",
-      "img": "https://eg.hm.com/assets/styles/HNM/14472541/cb9d35f1480ce5c8b0be39ad7fd35ab9f8004ce0/2/image-thumb__3453052__product_listing/70408034bd9792a93abbc8ad322565337f535e24.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:52d24931-b2ca-4d7c-ab8b-526a7dfda048/as/EID-bba86070f6aa9b3c4cc700aec0b821ab357c6f58.jpg?preferwebp=true&height=630",
       "max": 2
     }
-  ]
+  ],
+  "wishlist": []
 }

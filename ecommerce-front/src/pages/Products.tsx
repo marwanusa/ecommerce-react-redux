@@ -12,7 +12,8 @@ const Products = () => {
   const params = useParams();
   const { loading, records, error } = useAppSelector((state) => state.products)
   const cartItems = useAppSelector((state) => state.cart.items);
-  const porductFullInfo = records.map((product) => ({ ...product, quantity: cartItems[product.id] || 0 }))
+  const wishListItemsId = useAppSelector((state) => state.wishlist.itemsId);
+  const porductFullInfo = records.map((product) => ({ ...product, quantity: cartItems[product.id] || 0 ,isLiked:wishListItemsId.includes(product.id)}))
   useEffect(() => {
     dispatch(actGetProducts(params.prefix as string))
     return () => {

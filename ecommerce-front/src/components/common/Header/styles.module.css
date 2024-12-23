@@ -17,3 +17,8 @@
     display: block;
     margin-right: 5px;
 }
+.ecomLogoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
