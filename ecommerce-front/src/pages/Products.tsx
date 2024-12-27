@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { Loading } from "../components/feedback";
 import { GridList } from "../components/common";
 import {Heading} from "../components/common";
+import { TCategory } from "../types/category";
 const Products = () => {
   const dispatch = useAppDispatch();
   const params = useParams();
@@ -23,9 +24,9 @@ const Products = () => {
 
   return (
     <Container>
-      <Loading status={loading} error={error}>
+      <Loading type="product" status={loading} error={error}>
         <Heading ><span className="text-capitalize">{params.prefix}</span> Products</Heading>
-        <GridList records={porductFullInfo} renderItem={(record) => <Product {...record} />} empty={"There Are No Products"} />
+        <GridList records={porductFullInfo} renderItem={(record) => <Product {...record} />} massage={"There Are No Products"} />
       </Loading>
     </Container>
   )

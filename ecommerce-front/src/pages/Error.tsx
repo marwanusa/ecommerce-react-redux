@@ -1,26 +1,14 @@
-import { Button, Col, Container, Row } from "react-bootstrap"
-import { Link, useRouteError, isRouteErrorResponse } from "react-router-dom"
+import { Container } from "react-bootstrap";
+import { Link} from "react-router-dom";
+import {LottieHandler} from "../components/feedback";
+
 const Error = () => {
-    const error = useRouteError();
-    let errorStatus: number;
-    let errorStatusText: string;
-    if (isRouteErrorResponse(error)) {
-        errorStatus = error.status;
-        errorStatusText = error.statusText;
-    } else {
-        errorStatus = 404;
-        errorStatusText = "Page Not Found";
-    }
     return (
-        <Container className="text-center" style={{ marginTop: '100px' }}>
-            <Row>
-                <Col>
-                    <h1 style={{ fontSize: "90px" }}>{errorStatus}</h1>
-                    <h3>{errorStatusText}</h3>
-                    <Button variant="primary" href="/">
-                        <Link to="/" replace={true} style={{ color: 'white', textDecoration: 'none' }}>Go Home</Link>
-                    </Button>      </Col>
-            </Row>
+        <Container  style={{ marginTop: '60px' }}>
+            <div className="text-center d-flex flex-column justify-content-center align-items-center">
+                <LottieHandler width="600px" type="notFound" message="Oops! Something went wrong." />
+                <Link to="/" replace={true} >How about going back to the home page?</Link>
+            </div>
         </Container>
     )
 }

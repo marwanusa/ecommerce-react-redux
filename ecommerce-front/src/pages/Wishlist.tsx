@@ -29,11 +29,11 @@ const Wishlist = () => {
   return (
     <>
       <Heading>Your Wishlist</Heading>
-      <Loading status={loading} error={error}>
-      {records && records.length === 0 && <p>No items in your wishlist</p>}
+      <Loading type="product" status={loading} error={error}>
         <GridList<TProduct>
           records={records}
           renderItem={(record) => <Product {...record} />}
+          massage="No items in your wishlist"
         />
       </Loading>
     </>

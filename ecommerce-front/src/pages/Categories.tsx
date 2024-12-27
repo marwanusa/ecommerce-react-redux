@@ -16,9 +16,9 @@ const Categories = () => {
   }, [dispatch, records])
   return (
     <Container>
-      <Loading status={loading} error={error}>
+      <Loading type='category' status={loading} error={error}>
         <Heading>Categories</Heading>
-        <GridList records={records} renderItem={(record)=> <Category {...record}  />}empty={"There Are No Categories"} />
+        <GridList records={records} renderItem={(record)=> <Category {...record}  />}massage={"There Are No Categories"} />
       </Loading>
     </Container>
   )

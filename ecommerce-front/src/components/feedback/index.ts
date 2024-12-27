@@ -1,2 +1,3 @@
 import Loading from "./Loading/Loading";
-export {Loading};
+import LottieHandler from "./LottieHandler/LottieHandler";
+export {Loading,LottieHandler};

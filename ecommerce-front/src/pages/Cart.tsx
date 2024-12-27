@@ -3,7 +3,7 @@ import { Heading } from "../components/common";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { actGetProductsByItems } from "../store/cart/cartSlice";
 import {CartSubtotalPrice} from "../components/ecommerce";
-import { Loading } from "../components/feedback";
+import { Loading, LottieHandler } from "../components/feedback";
 import CartitemList from "../components/ecommerce/CartitemList/CartitemList";
 import {cartItemChangeQuantity,cartItemRemove} from "../store/cart/cartSlice";
 
@@ -31,9 +31,9 @@ const Cart = () => {
   return (
     <>
       <Heading>Cart</Heading>
-      <Loading status={loading} error={error}>
+      <Loading type="cart" status={loading} error={error}>
       {
-        !products.length ? <p>Cart is empty</p> : 
+        !products.length ? <LottieHandler width="200px" type="emptyCart" message="There Are No Products In Your Cart" /> : 
         <>
         <CartitemList changeQuantityHandler={changeQuantityHandler} removeItemHandler={removeItemHandler} products={products} />
         <CartSubtotalPrice products={products}/>

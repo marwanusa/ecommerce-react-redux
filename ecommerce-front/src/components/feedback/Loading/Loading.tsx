@@ -1,31 +1,28 @@
-import { useParams } from "react-router-dom";
 import { TLoading } from "../../../types/shared";
 import CategorySkeleton from "../skeletons/CategorySkeleton/CategorySkeleton";
 import ProductSkeleton from "../skeletons/ProductSkeleton/ProductSkeleton";
 import CartSkeleton from "../skeletons/CartSkeleton/CartSkeleton";
+import LottieHandler from "../LottieHandler/LottieHandler";
 
 type LoadingProps = {
   status: TLoading;
   error: null | string;
   children: React.ReactNode;
-
+  type: "category" | "cart" | "product" ;
 }
-const Loading = ({children,status,error}:LoadingProps) => {
-    const params = useParams();
-  if (status == "pending") {
-    if(params.prefix != undefined )
-    {
-      return <ProductSkeleton/>;
-    }else if(params.prefix == undefined && window.location.pathname == "/categories")
-    {
-      return <CategorySkeleton/>;
-    }else{
+const skeletonTypes = {
+  category: CategorySkeleton,
+  cart: CartSkeleton,
+  product: ProductSkeleton
+}
+const Loading = ({children,status,error,type}:LoadingProps) => {
+  const Component = skeletonTypes[type];
 
-      return <CartSkeleton/>;
-    }
+  if (status == "pending") {
+    return <Component />;
   }
   if (status == "failed") {
-    return <div>Error: {error}</div>;
+    return <LottieHandler width="200px" type="error" message={error as string} />;
   }
   return (
 <>{children}</>
