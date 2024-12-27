@@ -30,6 +30,7 @@ const Wishlist = () => {
     <>
       <Heading>Your Wishlist</Heading>
       <Loading status={loading} error={error}>
+      {records && records.length === 0 && <p>No items in your wishlist</p>}
         <GridList<TProduct>
           records={records}
           renderItem={(record) => <Product {...record} />}
